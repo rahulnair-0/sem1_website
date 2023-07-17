@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+<style>
+body  {
+  background-image: url("https://c1.wallpaperflare.com/preview/990/798/354/books-sculpture-education-read.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color:white;
+  font-family:'Trebuchet MS', sans-serif;}
+  h1 {
+	font-family: 'Trebuchet MS', sans-serif;
+	font-size:300%;
+	text-align:center;}
+  p{font-size:120%;}
+  .formbox
+  {
+  text-align: center;
+  font-size:125%;
+  display:inline-block;
+  margin: auto;
+  width: 100%;
+  }
+  
+}
+</style>
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+</head>
+<body>
+<h1>Suggest Me Something</h1><br><br><br><br>
+
+<div class="formbox">
+	<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+	 Name: <input type="text" name="fname">
+	 <input type="submit" value="Submit"><br><br>
+  
+	
+  <label for="list1">What would you like to reccommend?&nbsp;</label>
+	<select id="list1" name="list1">
+    <option value="Books">Books</option>
+    <option value="Movies">Movies</option>
+    <option value="Series">Series</option>
+    <option value="Anime">Anime</option>
+  </select><br><br>
+   <label for="list2">Genre &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</label>
+	<select id="list1" name="list2">
+    <option value="action">Action</option>
+    <option value="adventure">Adventure</option>
+    <option value="comedy">Comedy</option>
+    <option value="crime/mystery">Crime & Mystery</option>
+    <option value="fantasy">Fantasy</option>
+    <option value="historical">Historical</option>
+    <option value="horror">Horror</option>
+    <option value="romance">Romance</option>
+    <option value="satire">Satire</option>
+    <option value="sciencefiction">Science Fiction</option>
+    <option value="thriller">Thriller</option>
+    <option value="western">Western</option>
+    <option value="sports">Sports</option>
+  </select><br><Br>
+  <label for="author">Creator/Author:&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;</label>
+  <input type="text" id="author" name="author"><br><br>
+  
+  
+   <label for="r1">Overall rating &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;</label>
+	<select id="r1" name="r1">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    </select><br><Br>
+    
+     <label for="r1">&emsp;&emsp;&nbsp;->Story &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&nbsp;&nbsp;</label>
+	<select id="r1" name="r1">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    </select><br><Br>
+    
+    <label for="r1">&emsp;&emsp;->Narration/Direction &emsp;&emsp;&nbsp;</label>
+	<select id="r1" name="r1">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    </select><br><Br>
+    
+    <label for="r1">&emsp;&emsp;->Soundtracks/songs(if any)</label>
+	<select id="r1" name="r1">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    </select><br><Br>
+    
+    <label for="r1">&emsp;&emsp;&nbsp;->Character developments&nbsp;&nbsp;&nbsp;</label>
+	<select id="r1" name="r1">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    </select><br><Br>
+    
+    <label for="r1">&emsp;&emsp;&nbsp;->Ending&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&nbsp;&nbsp;</label>
+	<select id="r1" name="r1">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    </select><br><Br>
+  
+  <label for="review">Description/Review&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;</label><br>
+<textarea id="review" name="review" rows="5" cols="50">
+ 
+  </textarea>
+  <br><br>
+  <input type="reset" value="Reset">&emsp;
+   <button type="submit" form="form1" value="Submit">Submit</button>
+  </form>
+  </div>
+  
+
+		
+	

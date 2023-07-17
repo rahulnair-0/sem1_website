@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+  .jumbotron {
+  background-image: url("https://www.wallpaperflare.com/static/427/362/426/panorama-artwork-sea-clouds-wallpaper.jpg");
+  background-size: cover;
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid azure;
+  border-radius: 50%;
+  border-top: 16px solid pink;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;}
+
+	body  {
+  background-image: url("https://i.pinimg.com/originals/5b/69/b6/5b69b6428cfc59f14a3ca43182595bd2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  font-family:'Trebuchet MS', sans-serif;}
+  h1 {
+	font-family: 'Trebuchet MS', sans-serif;
+	font-size:300%;
+	color:azure;
+	text-align:center;}
+  h2{
+	  font-family: 'Trebuchet MS', sans-serif;
+	  font-size:200%;
+	 }
+  p{font-size:120%;
+	  color:azure;}
+
+
+
+</style>
+
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+<div class="container">
+<div class="jumbotron">
+  <h1>Travel Destinations on my Bucket List..</h1>
+  
+</div>
+</div>
+ 
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>Hampi</h2>
+      <p>&emsp;
+      <img src="https://c.stocksy.com/a/n0F200/z9/534365.jpg" style="width:80%;"></p>
+      <p>Situated in Karnataka,India, this is one of the places I've been meaning to visit for a long time.This serene once-upon-a-time capital is
+	a paradise for back packers across the world. It is known for its architectural marvels and the whole town in general is perfect for a weekend escapade.
+	The locals are friendly and the island on the river flowing through the town has a bustling night life  </p>
+
+    </div>
+    <div class="col-sm-4">
+      <h2>Japan</h2>
+      <p>&nbsp;<img src="data:image/jpeg;base64,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" style="width:94%;">
+	</p><p>The land of the Rising Sun-Japan is one of my favourite countries due to various reasons. The native people are very respectful of each other and live a
+	very disciplined lifestyle. The buildings and their style is a treat for the eyes and the excuisite cuisine is a treat in itself.The people lead a peace loving 
+	culture and preserve their traditions along with propagating science and logic.One of the main reasons for my attraction towards the country is anime(animated series and T.V shows)</p>
+	
+    </div>
+    <div class="col-sm-4">
+      	<h2>Bali</h2>
+	<p>&emsp;<img src="https://traveltriangle.com/blog/wp-content/uploads/2015/08/Ku-De-Ta-in-Seminyak.jpg" style="width:80%;">
+    </p><p>Bali is a favorite for many people around the world and it’s easy to see why.From its list of unending idyllic beaches, captivating spiritual energy, terraced rice fields and exotic sunsets. There is so much to see and experience on this magnificent island paradise.</p>
+    
+    </div>
+  </div>
+</div><br><br>
+<p>
+	(bootstrap)</p>
+
+</body>
+</html>
